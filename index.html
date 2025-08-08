@@ -19,27 +19,14 @@
     <meta property="og:type" content="website" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module">
-      import { createRoot } from 'https://esm.sh/react-dom@19.1.0/client';
-      import React from 'https://esm.sh/react@19.1.0';
-      
-      // Importar a aplicação
-      import('./assets/index-CfX0m6UE.js').then(module => {
-        // Aplicação carregada com sucesso
-      }).catch(error => {
-        console.error('Erro ao carregar a aplicação:', error);
-        document.getElementById('root').innerHTML = `
-          <div style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
-            <h1>🔧 Carregando Aplicativo...</h1>
-            <p>Se esta mensagem persistir, tente recarregar a página.</p>
-            <button onclick="window.location.reload()" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
-              Recarregar
-            </button>
-          </div>
-        `;
-      });
-    </script>
-    <link rel="stylesheet" href="./assets/index-Bz0vNSH7.css">
+    <div id="root">
+      <div style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+        <h1>💰 Controle Financeiro</h1>
+        <p>Carregando aplicativo...</p>
+      </div>
+    </div>
+    <script type="module" crossorigin src="./assets/index-CfX0m6UE.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/vendor-CEjTMBxM.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Bz0vNSH7.css">
   </body>
 </html>
