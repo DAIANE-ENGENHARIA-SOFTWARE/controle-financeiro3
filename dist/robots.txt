@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow access to source files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://seudominio.com/sitemap.xml

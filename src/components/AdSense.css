@@ -1,0 +1,159 @@
+/* Estilos para anúncios do Google AdSense */
+
+.adsense-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.adsense-container::before {
+  content: '📢 Publicidade';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 10px;
+  color: #6c757d;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px 6px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Banner horizontal (topo e rodapé) */
+.adsense-banner {
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto;
+  min-height: 90px;
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+}
+
+.adsense-top {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adsense-bottom {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Anúncio retangular (sidebar) */
+.adsense-rectangle {
+  width: 100%;
+  max-width: 300px;
+  min-height: 250px;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  margin-bottom: 20px;
+}
+
+/* Anúncio responsivo */
+.adsense-responsive {
+  width: 100%;
+  min-height: 120px;
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  margin-bottom: 20px;
+}
+
+/* Anúncio no Dashboard */
+.adsense-dashboard {
+  margin: 20px 0;
+  background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+}
+
+/* Anúncio na Calculadora */
+.adsense-calculator {
+  margin: 15px 0;
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  border-radius: 10px;
+}
+
+/* Anúncio nos Relatórios */
+.adsense-reports {
+  margin: 20px 0;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+}
+
+/* Placeholder quando AdSense não carrega */
+.adsense-container:empty::after {
+  content: 'Espaço reservado para publicidade';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #6c757d;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .adsense-banner {
+    max-width: 320px;
+    min-height: 50px;
+  }
+  
+  .adsense-rectangle {
+    max-width: 280px;
+    min-height: 200px;
+  }
+  
+  .adsense-responsive {
+    min-height: 100px;
+  }
+  
+  .adsense-container::before {
+    font-size: 8px;
+    padding: 1px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adsense-banner {
+    max-width: 300px;
+    min-height: 50px;
+  }
+  
+  .adsense-rectangle {
+    max-width: 250px;
+    min-height: 150px;
+  }
+  
+  .adsense-responsive {
+    min-height: 80px;
+  }
+}
+
+/* Animação suave de carregamento */
+.adsense-container {
+  transition: all 0.3s ease;
+}
+
+.adsense-container:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Integração com tema do app */
+.adsense-container .adsbygoogle {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Espaçamento consistente */
+.adsense-spacing {
+  margin: 20px 0;
+}
+
+/* Para anúncios inline no conteúdo */
+.adsense-inline {
+  margin: 15px auto;
+  display: block;
+}
